@@ -1,0 +1,229 @@
+{
+  "files_scanned_count": 43,
+  "variables_found": {
+    "primary": "#E63946",
+    "primary-dark": "#9D0208",
+    "secondary": "#050505",
+    "accent": "#8C5A00",
+    "text": "#333",
+    "text-light": "#666",
+    "bg": "#FFFFFF",
+    "bg-alt": "#F8F8F8",
+    "success": "#047857",
+    "warning": "#F59E0B",
+    "shadow": "rgba(0,0,0,0.1)",
+    "shadow-lg": "rgba(0,0,0,0.15)",
+    "fa-family-brands": "\"Font Awesome 7 Brands\"",
+    "fa-family-classic": "\"Font Awesome 7 Free\"",
+    "fa-font-solid": "normal 900 1em/1 \"Font Awesome 7 Free\"",
+    "fa-font-regular": "normal 400 1em/1 \"Font Awesome 7 Free\"",
+    "fa-font-light": "normal 300 1em/1 \"Font Awesome 7 Pro\"",
+    "fa-font-thin": "normal 100 1em/1 \"Font Awesome 7 Pro\"",
+    "fa-font-duotone": "normal 900 1em/1 \"Font Awesome 7 Duotone\"",
+    "fa-font-duotone-regular": "normal 400 1em/1 \"Font Awesome 7 Duotone\"",
+    "fa-font-duotone-light": "normal 300 1em/1 \"Font Awesome 7 Duotone\"",
+    "fa-font-duotone-thin": "normal 100 1em/1 \"Font Awesome 7 Duotone\"",
+    "fa-font-brands": "normal 400 1em/1 \"Font Awesome 7 Brands\"",
+    "fa-font-sharp-solid": "normal 900 1em/1 \"Font Awesome 7 Sharp\"",
+    "fa-font-sharp-regular": "normal 400 1em/1 \"Font Awesome 7 Sharp\"",
+    "fa-font-sharp-light": "normal 300 1em/1 \"Font Awesome 7 Sharp\"",
+    "fa-font-sharp-thin": "normal 100 1em/1 \"Font Awesome 7 Sharp\"",
+    "fa-font-sharp-duotone-solid": "normal 900 1em/1 \"Font Awesome 7 Sharp Duotone\"",
+    "fa-font-sharp-duotone-regular": "normal 400 1em/1 \"Font Awesome 7 Sharp Duotone\"",
+    "fa-font-sharp-duotone-light": "normal 300 1em/1 \"Font Awesome 7 Sharp Duotone\"",
+    "fa-font-sharp-duotone-thin": "normal 100 1em/1 \"Font Awesome 7 Sharp Duotone\"",
+    "fa-font-slab-regular": "normal 400 1em/1 \"Font Awesome 7 Slab\"",
+    "fa-font-slab-press-regular": "normal 400 1em/1 \"Font Awesome 7 Slab Press\"",
+    "fa-font-whiteboard-semibold": "normal 600 1em/1 \"Font Awesome 7 Whiteboard\"",
+    "fa-font-thumbprint-light": "normal 300 1em/1 \"Font Awesome 7 Thumbprint\"",
+    "fa-font-notdog-solid": "normal 900 1em/1 \"Font Awesome 7 Notdog\"",
+    "fa-font-notdog-duo-solid": "normal 900 1em/1 \"Font Awesome 7 Notdog Duo\"",
+    "fa-font-etch-solid": "normal 900 1em/1 \"Font Awesome 7 Etch\"",
+    "fa-font-jelly-regular": "normal 400 1em/1 \"Font Awesome 7 Jelly\"",
+    "fa-font-jelly-fill-regular": "normal 400 1em/1 \"Font Awesome 7 Jelly Fill\"",
+    "fa-font-jelly-duo-regular": "normal 400 1em/1 \"Font Awesome 7 Jelly Duo\"",
+    "fa-font-chisel-regular": "normal 400 1em/1 \"Font Awesome 7 Chisel\"",
+    "fa-font-utility-semibold": "normal 600 1em/1 \"Font Awesome 7 Utility\"",
+    "fa-font-utility-duo-semibold": "normal 600 1em/1 \"Font Awesome 7 Utility Duo\""
+  },
+  "resolved_rgb": {
+    "text": [
+      51,
+      51,
+      51
+    ],
+    "bg": [
+      255,
+      255,
+      255
+    ],
+    "bg-alt": [
+      248,
+      248,
+      248
+    ],
+    "primary": [
+      230,
+      57,
+      70
+    ],
+    "primary-dark": [
+      157,
+      2,
+      8
+    ],
+    "secondary": [
+      5,
+      5,
+      5
+    ],
+    "accent": [
+      140,
+      90,
+      0
+    ],
+    "text-light": [
+      102,
+      102,
+      102
+    ],
+    "success": [
+      4,
+      120,
+      87
+    ],
+    "warning": [
+      245,
+      158,
+      11
+    ]
+  },
+  "checks": [
+    {
+      "foreground": "text",
+      "background": "bg",
+      "fg_rgb": [
+        51,
+        51,
+        51
+      ],
+      "bg_rgb": [
+        255,
+        255,
+        255
+      ],
+      "contrast_ratio": 12.63,
+      "AA_normal_text": true,
+      "AA_large_text": true,
+      "AAA_normal_text": true
+    },
+    {
+      "foreground": "text",
+      "background": "bg-alt",
+      "fg_rgb": [
+        51,
+        51,
+        51
+      ],
+      "bg_rgb": [
+        248,
+        248,
+        248
+      ],
+      "contrast_ratio": 11.9,
+      "AA_normal_text": true,
+      "AA_large_text": true,
+      "AAA_normal_text": true
+    },
+    {
+      "foreground": "primary",
+      "background": "white",
+      "fg_rgb": [
+        230,
+        57,
+        70
+      ],
+      "bg_rgb": [
+        255,
+        255,
+        255
+      ],
+      "contrast_ratio": 4.17,
+      "AA_normal_text": false,
+      "AA_large_text": true,
+      "AAA_normal_text": false
+    },
+    {
+      "foreground": "primary",
+      "background": "secondary",
+      "fg_rgb": [
+        230,
+        57,
+        70
+      ],
+      "bg_rgb": [
+        5,
+        5,
+        5
+      ],
+      "contrast_ratio": 4.89,
+      "AA_normal_text": true,
+      "AA_large_text": true,
+      "AAA_normal_text": false
+    },
+    {
+      "foreground": "accent",
+      "background": "bg",
+      "fg_rgb": [
+        140,
+        90,
+        0
+      ],
+      "bg_rgb": [
+        255,
+        255,
+        255
+      ],
+      "contrast_ratio": 5.87,
+      "AA_normal_text": true,
+      "AA_large_text": true,
+      "AAA_normal_text": false
+    },
+    {
+      "foreground": "text-light",
+      "background": "bg",
+      "fg_rgb": [
+        102,
+        102,
+        102
+      ],
+      "bg_rgb": [
+        255,
+        255,
+        255
+      ],
+      "contrast_ratio": 5.74,
+      "AA_normal_text": true,
+      "AA_large_text": true,
+      "AAA_normal_text": false
+    },
+    {
+      "foreground": "success",
+      "background": "bg",
+      "fg_rgb": [
+        4,
+        120,
+        87
+      ],
+      "bg_rgb": [
+        255,
+        255,
+        255
+      ],
+      "contrast_ratio": 5.48,
+      "AA_normal_text": true,
+      "AA_large_text": true,
+      "AAA_normal_text": false
+    }
+  ]
+}

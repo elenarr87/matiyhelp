@@ -1,0 +1,1167 @@
+﻿<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://maps.googleapis.com https://www.google.com; frame-src https://www.google.com https://maps.google.com; object-src 'none'; base-uri 'self'; form-action 'self';">
+    <title>За Нас - Пътна Помощ Матю ЕООД</title>
+    <meta name="description" content="Научете повече за Пътна Помощ Матю ЕООД. Над 10 години опит в пътната помощ. Професионален екип, лицензирана дейност, 24/7 поддръжка.">
+    <meta name="keywords" content="за нас, пътна помощ Матю, история, екип, лиценз, опит">
+    <link rel="canonical" href="https://matiyhelp.bg/about.html">
+    <meta property="og:title" content="За Нас - Пътна Помощ Матю ЕООД">
+    <meta property="og:description" content="Над 10 години опит в пътната помощ. Професионален екип, лицензирана дейност, 24/7 поддръжка">
+    <meta property="og:url" content="https://matiyhelp.bg/about.html">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #E63946;
+            --primary-dark: #9D0208;
+            --secondary: #050505;
+            --accent: #8C5A00;
+            --text: #333;
+            --text-light: #666;
+            --bg: #FFFFFF;
+            --bg-alt: #F8F8F8;
+            --success: #047857;
+            --warning: #F59E0B;
+            --shadow: rgba(0,0,0,0.1);
+            --shadow-lg: rgba(0,0,0,0.15);
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            gap: 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--accent);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+        }
+
+        .emergency-contact {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .phone-number {
+            font-size: clamp(1.25rem, 3vw, 2rem);
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            letter-spacing: 1px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        .emergency-badge {
+            background: var(--primary);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(255,69,0,0.4);
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: var(--bg-alt);
+            padding: 1rem 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumbs a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumbs span {
+            color: var(--text-light);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 100%),
+                        url('images/about-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 8rem 1.5rem 6rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.4);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-alt {
+            background: var(--bg-alt);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        /* Story Section */
+        .story-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .story-content h3 {
+            font-size: 1.75rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .story-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .story-image {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px var(--shadow-lg);
+        }
+
+        .story-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .stat-item {
+            padding: 2rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            font-weight: 600;
+            opacity: 0.9;
+        }
+
+        /* Values Section */
+        .values-section {
+            padding: 5rem 0;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .value-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px var(--shadow);
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px var(--shadow-lg);
+            border-color: var(--primary);
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .value-title {
+            font-size: 1.25rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        .value-description {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Team Section */
+        .team-section {
+            background: var(--bg-alt);
+            padding: 5rem 0;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .team-member {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px var(--shadow);
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px var(--shadow-lg);
+        }
+
+        .team-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--primary);
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+
+        .team-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .team-role {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .team-description {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        /* License Section */
+        .license-section {
+            background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .license-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .license-content h3 {
+            font-size: 2rem;
+            color: #92400E;
+            margin-bottom: 1.5rem;
+        }
+
+        .license-content p {
+            color: #78350F;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .license-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .license-feature {
+            padding: 1.5rem;
+            background: rgba(255,255,255,0.8);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .license-feature h4 {
+            color: #92400E;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--secondary) 0%, #2A2A2A 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .cta-content h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-content p {
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 4px 20px rgba(255,69,0,0.4);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            box-shadow: 0 6px 25px rgba(255,69,0,0.5);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--secondary);
+            color: white;
+            padding: 2rem 1.5rem 1rem;
+            margin-top: 0;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-top {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .emergency-contact {
+                flex-direction: column;
+            }
+
+            .story-section {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .license-features {
+                grid-template-columns: 1fr;
+            }
+
+            .main-content {
+                padding: 0 1rem;
+            }
+
+            .section {
+                padding: 3rem 0;
+            }
+        }
+
+        /* Contact Section */
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #e0e0e0;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .contact-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-card h3 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .contact-card a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .contact-card a:hover {
+            color: var(--primary-dark);
+        }
+
+        .contact-card p {
+            color: var(--text-light);
+            margin: 0.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .contact-info {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .contact-card {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Floating CTA */
+        .floating-cta {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 999;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .floating-cta a {
+            background: var(--primary);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 8px 30px rgba(255,69,0,0.5);
+            text-decoration: none;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            padding: 0;
+        }
+
+        .floating-cta a:hover {
+            background: var(--primary-dark);
+            box-shadow: 0 12px 40px rgba(255,69,0,0.6);
+        }
+
+        /* Floating Location Button */
+        .floating-location {
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+            z-index: 999;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .floating-location button {
+            background: var(--success);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 8px 30px rgba(16,185,129,0.5);
+            border: none;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            padding: 0;
+        }
+
+        .floating-location button:hover {
+            background: #059669;
+            box-shadow: 0 12px 40px rgba(16,185,129,0.6);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .floating-cta {
+                bottom: 1rem;
+                right: 1rem;
+            }
+
+            .floating-cta a {
+                width: 50px;
+                height: 50px;
+                font-size: 1.25rem;
+            }
+
+            .floating-location {
+                bottom: 1rem;
+                left: 1rem;
+            }
+
+            .floating-location button {
+                width: 50px;
+                height: 50px;
+                font-size: 1.25rem;
+            }
+        }
+        </style>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "WebPage",
+                    "mainEntity": { "@id": "https://matiyhelp.bg/#localbusiness" }
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Начало",
+                            "item": "https://matiyhelp.bg/index.html"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "За нас",
+                            "item": "https://matiyhelp.bg/about.html"
+                        }
+                    ]
+                }
+            ]
+        }
+        </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <a href="index.html" class="logo">
+                <img src="images/logotrans.png" alt="Пътна Помощ Матю" class="logo-icon">
+                <span>Пътна Помощ Матю</span>
+            </a>
+            <div class="emergency-contact">
+                <a href="tel:0888314855" class="phone-number">📞 0888 31 48 55</a>
+                <span class="emergency-badge">24/7 Аварийна помощ</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <a href="index.html">Начало</a> <span>></span> <span>За Нас</span>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">За Нас</h1>
+            <p class="hero-subtitle">Над 10 години опит в пътната помощ. Вашият надежден партньор на пътя.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Story Section -->
+        <section class="section">
+            <div class="story-section">
+                <div class="story-content">
+                    <h3>Нашата История</h3>
+                    <p>Пътна Помощ Матю ЕООД е основана през 2014 година с ясната мисия да предоставя професионална и надеждна пътна помощ на всички, които се нуждаят от нея. Започнахме като малък екип от специалисти с една цел - да помогнем на хората в трудни моменти на пътя.</p>
+
+                    <p>През годините изградихме репутация на компания, на която може да се разчита. Нашият екип се състои от опитни механици и специалисти, които са преминали през стотици различни ситуации и винаги намират решение.</p>
+
+                    <p>Днес обслужваме хиляди клиенти годишно в района на София и околностите, като продължаваме да се развиваме и подобряваме услугите си.</p>
+                </div>
+                <div class="story-image">
+                    <img src="images/team-work.jpg" alt="Нашият екип в действие" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Години Опит</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5000+</span>
+                    <span class="stat-label">Доволни Клиенти</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">на линия</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">Обслужвани Района</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="section section-alt">
+            <div class="section-header">
+                <h2 class="section-title">Нашите Ценности</h2>
+                <p>Принципите, които ни водят във всяка ситуация</p>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <span class="value-icon">⚡</span>
+                    <h3 class="value-title">Бързина</h3>
+                    <p class="value-description">Реагираме бързо на всяко повикване. Вашето време е ценно и се стремим да стигнем при вас възможно най-бързо.</p>
+                </div>
+
+                <div class="value-card">
+                    <span class="value-icon">🔧</span>
+                    <h3 class="value-title">Професионализъм</h3>
+                    <p class="value-description">Нашият екип се състои от квалифицирани специалисти с години опит. Използваме само качествено оборудване и части.</p>
+                </div>
+
+                <div class="value-card">
+                    <span class="value-icon">💰</span>
+                    <h3 class="value-title">Честност</h3>
+                    <p class="value-description">Нямаме скрити такси. Предоставяме точна информация за цените предварително и издаваме всички необходими документи.</p>
+                </div>
+
+                <div class="value-card">
+                    <span class="value-icon">🤝</span>
+                    <h3 class="value-title">Доверие</h3>
+                    <p class="value-description">Строим дългосрочни отношения с клиентите си. Вашето доверие е нашата най-голяма ценност.</p>
+                </div>
+
+                <div class="value-card">
+                    <span class="value-icon">🛡️</span>
+                    <h3 class="value-title">Безопасност</h3>
+                    <p class="value-description">Приоритет за нас е безопасността на нашите клиенти и екип. Спазваме всички правила и норми за безопасност.</p>
+                </div>
+
+                <div class="value-card">
+                    <span class="value-icon">🌟</span>
+                    <h3 class="value-title">Качество</h3>
+                    <p class="value-description">Предоставяме услуги от най-високо качество. Непрекъснато се стремим към подобряване и иновации.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Нашият Екип</h2>
+                <p>Професионалисти, на които можете да разчитате</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-photo">👨‍🔧</div>
+                    <h3 class="team-name">Матю Иванов</h3>
+                    <p class="team-role">Основател и Ръководител</p>
+                    <p class="team-description">С над 15 години опит в автомобилната индустрия. Специалист по тежкотоварни автомобили и извличане.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-photo">👨‍🔧</div>
+                    <h3 class="team-name">Георги Петров</h3>
+                    <p class="team-role">Старши Механик</p>
+                    <p class="team-description">Експерт по електрически системи и акумулатори. 10+ години опит с всички марки автомобили.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-photo">👨‍💼</div>
+                    <h3 class="team-name">Иван Димитров</h3>
+                    <p class="team-role">Диспечер</p>
+                    <p class="team-description">Координира всички повиквания 24/7. Осигурява бърза и точна комуникация с клиентите.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-photo">👨‍🔧</div>
+                    <h3 class="team-name">Димитър Стоянов</h3>
+                    <p class="team-role">Механик</p>
+                    <p class="team-description">Специалист по гуми и основни ремонти. Опитен в работа при всякакви условия.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- License Section -->
+        <section class="license-section">
+            <div class="license-content">
+                <h3>Лицензирана Дейност</h3>
+                <p>Пътна Помощ Матю ЕООД е регистрирана и лицензирана компания, която спазва всички законови изисквания и стандарти за качество.</p>
+
+                <div class="license-features">
+                    <div class="license-feature">
+                        <h4>📋 Регистрация</h4>
+                        <p>Регистрирана в Търговския регистър</p>
+                    </div>
+                    <div class="license-feature">
+                        <h4>💼 ДДС</h4>
+                        <p>Регистрирана по ДДС</p>
+                    </div>
+                    <div class="license-feature">
+                        <h4>🔒 Застраховка</h4>
+                        <p>Професионална застраховка</p>
+                    </div>
+                    <div class="license-feature">
+                        <h4>📊 Счетоводство</h4>
+                        <p>Правилно водено счетоводство</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h3>Готови ли сте да ни се доверите?</h3>
+                <p>Свържете се с нас още сега и се убедете в професионализма ни. Ние сме тук, за да ви помогнем!</p>
+                <a href="tel:0888314855" class="btn btn-primary">
+                    📞 Обади се сега
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <section class="section section-alt">
+        <div class="section-header">
+            <h2 class="section-title">Свържете се с нас</h2>
+            <p>Когато имате нужда от помощ - ние сме на разположение 24/7</p>
+        </div>
+
+        <div class="contact-info">
+            <div class="contact-card">
+                <div class="icon">📞</div>
+                <h3>Телефон</h3>
+                <a href="tel:0888314855">0888 31 48 55</a>
+                <p style="margin-top: 0.5rem; color: var(--text-light);">Денонощно 24/7</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="icon">📍</div>
+                <h3>Локация</h3>
+                <p>ул. Република 23, Годеч, България</p>
+                <a href="https://maps.app.goo.gl/ScpBJ4qf2u2QGk3C7" target="_blank" style="font-size: 0.95rem;">
+                    Виж в Google Maps
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <div class="icon">💼</div>
+                <h3>Фирма</h3>
+                <p><strong>Пътна Помощ - Матю ЕООД</strong></p>
+                <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">
+                    Лицензирана пътна помощ
+                </p>
+            </div>
+
+            <div class="contact-card">
+                <div class="icon">📱</div>
+                <h3>Сподели локация</h3>
+                <button onclick="sendGPSCoordinates()" class="btn btn-primary" style="margin-top: 1rem; padding: 0.75rem 1.5rem; font-size: 0.9rem;">
+                    📍 <span class="btn-text-bg">Изпрати локация</span>
+                    <span class="btn-text-en" style="display:none;">Send Location</span>
+                    <span class="btn-text-ro" style="display:none;">Trimite Locația</span>
+                    <span class="btn-text-tr" style="display:none;">Konum Gönder</span>
+                </button>
+                <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.5rem;">
+                    За по-бърза помощ
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Пътна Помощ Матю</h3>
+                <p>Ваш надежден партньор на пътя. Професионална пътна помощ 24/7.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Услуги</h3>
+                <ul>
+                    <li><a href="index.html#services">Извличане на МПС</a></li>
+                    <li><a href="index.html#services">Доставка на гориво</a></li>
+                    <li><a href="index.html#services">Смяна на гуми</a></li>
+                    <li><a href="index.html#services">Вадене обърнато МПС</a></li>
+                    <li><a href="index.html#services">Помощни колички</a></li>
+                    <li><a href="index.html#services">Липсваща кука</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Информация</h3>
+                <ul>
+                    <li><a href="about.html">За нас</a></li>
+                    <li><a href="faq.html">Често задавани въпроси</a></li>
+                    <li><a href="privacy-policy.html">Поверителност</a></li>
+                    <li><a href="calculator.html">Калкулатор</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Региони</h3>
+                <ul>
+                    <li><a href="areas/buchin-prohod.html">Бучин проход</a></li>
+                    <li><a href="areas/ginci.html">Гинци</a></li>
+                    <li><a href="areas/burzia.html">Бързия</a></li>
+                    <li><a href="areas/godech.html">Годеч</a></li>
+                    <li><a href="areas/petrohan.html">Петрохан</a></li>
+                    <li><a href="areas/kalotina.html">Калотина</a></li>
+                    <li><a href="areas/kostinbrod.html">Костинброд</a></li>
+                    <li><a href="areas/slivnica.html">Сливница</a></li>
+                    <li><a href="areas/dragoman.html">Драгоман</a></li>
+                    <li><a href="areas/svoge.html">Своге</a></li>
+                    <li><a href="areas/sofia.html">София</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p style="text-align:center;color:#ffffff;margin-top:.5rem"><a href="https://moverstudio.online" target="_blank" rel="noopener" style="text-decoration: none; color: inherit; font-weight: normal;">© 2026 MOVER Studio — уеб дизайн и разработка. Всички права запазени.</a></p>
+            <p>Лицензирана пътна помощ | ДДС | Фактури на място</p>
+        </div>
+    </footer>
+
+    <script>
+        // Location sharing functionality
+        function sendGPSCoordinates() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    function(position) {
+                        const latitude = position.coords.latitude;
+                        const longitude = position.coords.longitude;
+                        const accuracy = position.coords.accuracy;
+
+                        // Create SMS message with coordinates
+                        const message = `Пътна помощ - нуждая се от помощ! Моите координати: ${latitude.toFixed(6)}, ${longitude.toFixed(6)}. Точност: ${Math.round(accuracy)}м.`;
+                        const phoneNumber = '0888314855';
+
+                        // Create SMS link
+                        const smsLink = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`;
+
+                        // Open SMS app
+                        window.location.href = smsLink;
+
+                        // Show success message
+                        alert('Локацията е изпратена! SMS приложението ще се отвори.');
+                    },
+                    function(error) {
+                        let errorMessage = 'Не можахме да получим вашата локация.';
+                        switch(error.code) {
+                            case error.PERMISSION_DENIED:
+                                errorMessage = 'Достъпът до локация е отказан. Моля, разрешете достъпа в браузъра.';
+                                break;
+                            case error.POSITION_UNAVAILABLE:
+                                errorMessage = 'Локацията не е достъпна.';
+                                break;
+                            case error.TIMEOUT:
+                                errorMessage = 'Времето за получаване на локация изтече.';
+                                break;
+                        }
+                        alert(errorMessage);
+                    },
+                    {
+                        enableHighAccuracy: true,
+                        timeout: 10000,
+                        maximumAge: 300000
+                    }
+                );
+            } else {
+                alert('Вашият браузър не поддържа геолокация.');
+            }
+        }
+
+        // Language switching functionality
+        function switchLanguage(lang) {
+            // Hide all language-specific elements
+            document.querySelectorAll('[class*="btn-text-"]').forEach(el => el.style.display = 'none');
+            // Show selected language elements
+            document.querySelectorAll(`.btn-text-${lang}`).forEach(el => el.style.display = 'inline');
+        }
+
+        // Initialize with Bulgarian
+        document.addEventListener('DOMContentLoaded', function() {
+            switchLanguage('bg');
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Пътна Помощ - Матю</h3>
+                <p>Надежден партньор при всяка ситуация на пътя. Професионална пътна помощ 24/7.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/matiputnapomosht/" target="_blank" class="social-link">📘</a>
+                    <a href="https://www.instagram.com/matiyhelp91/" target="_blank" class="social-link">📷</a>
+                    <a href="https://www.tiktok.com/@matiyhelp" target="_blank" class="social-link">🎵</a>
+                    <a href="https://www.youtube.com/channel/UCyV97q8gX0EIPvT_IlmMnSg" target="_blank" class="social-link">▶️</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Услуги</h3>
+                <ul>
+                    <li><a href="index.html#services">Репатриране след ПТП</a></li>
+                    <li><a href="index.html#services">Вадене от канавка</a></li>
+                    <li><a href="index.html#services">Репатриране на бусове</a></li>
+                    <li><a href="index.html#services">Подаване на ток</a></li>
+                    <li><a href="index.html#services">Доставка на гориво</a></li>
+                    <li><a href="index.html#services">Смяна на гума</a></li>
+                    <li><a href="index.html#services">Вадене обърнато МПС</a></li>
+                    <li><a href="index.html#services">Помощни колички</a></li>
+                    <li><a href="index.html#services">Липсваща кука</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Бързи връзки</h3>
+                <ul>
+                    <li><a href="index.html#contact">Свържете се с нас</a></li>
+                    <li><a href="calculator.html">Калкулатор на цени</a></li>
+                    <li><a href="about.html">За нас</a></li>
+                    <li><a href="privacy-policy.html">Политика за поверителност</a></li>
+                    <li><a href="faq.html">Често задавани въпроси</a></li>
+                    <li><a href="https://sites.google.com/view/matiuhelp/" target="_blank">Нашият сайт</a></li>
+                    <li><a href="https://luxury77.com/firm/avtomorga_mitaka/" target="_blank">Luxury77</a></li>
+                    <li><a href="https://myve.bg/patna-pomosht-matyu-eood-obekt14342.html" target="_blank">MyVe</a></li>
+                    <li><a href="https://www.primewheels.bg/top-avto-uslugi/services-other/services-other-assistance/ptna-pomoshch-matiu-godiech-pietrokhan-kalotina-582.html" target="_blank">PrimeWheels</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <ul>
+                    <li>📞 <a href="tel:0888314855">0888 31 48 55</a></li>
+                    <li>📍 ул. Република 23, Годеч</li>
+                    <li>🕐 24/7 Денонощно</li>
+                    <li>💳 Брой / Карта / Revolut</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p style="text-align:center;color:#ffffff;margin-top:.5rem"><a href="https://moverstudio.online" target="_blank" rel="noopener" style="text-decoration: none; color: inherit; font-weight: normal;">© 2026 MOVER Studio — уеб дизайн и разработка. Всички права запазени.</a></p>
+            <p>Лицензирана пътна помощ | ДДС | Фактури на момента</p>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+        <a href="tel:0888314855">
+            📞
+        </a>
+    </div>
+
+    <!-- Floating Location Button -->
+    <div class="floating-location">
+        <button onclick="sendGPSCoordinates()">
+            📍
+        </button>
+    </div>
+</body>
+</html>

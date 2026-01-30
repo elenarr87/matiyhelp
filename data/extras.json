@@ -1,0 +1,201 @@
+{
+  "extras": [
+    {
+      "id": "ditch_extraction",
+      "name_bg": "Вадене от канавка/дере",
+      "name_en": "Ditch extraction",
+      "name_ro": "Extracție din șanț",
+      "name_tr": "Hendekten çıkarma",
+      "price": 80,
+      "currency": "EUR",
+      "unit_bg": "еднократно",
+      "unit_en": "one-time",
+      "unit_ro": "o singură dată",
+      "unit_tr": "tek seferlik",
+      "category": "extraction",
+      "keywords_bg": ["канавка", "дере", "вадене"],
+      "keywords_en": ["ditch", "extraction", "recovery"],
+      "keywords_ro": ["șanț", "extracție", "recuperare"],
+      "keywords_tr": ["hendek", "çıkarma", "kurtarma"]
+    },
+    {
+      "id": "vehicle_flipped_ditch",
+      "name_bg": "Обърнато МПС (канавка/дере)",
+      "name_en": "Flipped vehicle (ditch)",
+      "name_ro": "Vehicul răsturnat (șanț)",
+      "name_tr": "Devrilmiş araç (hendek)",
+      "price": 130,
+      "currency": "EUR",
+      "unit_bg": "еднократно",
+      "unit_en": "one-time",
+      "unit_ro": "o singură dată",
+      "unit_tr": "tek seferlik",
+      "category": "extraction",
+      "keywords_bg": ["обърнат", "превърнат", "канавка"],
+      "keywords_en": ["flipped", "overturned", "ditch"],
+      "keywords_ro": ["răsturnat", "șanț"],
+      "keywords_tr": ["devrilmiş", "hendek"]
+    },
+    {
+      "id": "vehicle_flipped_road",
+      "name_bg": "Обърнато МПС (асфалт)",
+      "name_en": "Flipped vehicle (road)",
+      "name_ro": "Vehicul răsturnat (șosea)",
+      "name_tr": "Devrilmiş araç (yol)",
+      "price": 70,
+      "currency": "EUR",
+      "unit_bg": "еднократно",
+      "unit_en": "one-time",
+      "unit_ro": "o singură dată",
+      "unit_tr": "tek seferlik",
+      "category": "extraction"
+    },
+    {
+      "id": "loading_unloading",
+      "name_bg": "Товаро/разтоварни дейности след ПТП",
+      "name_en": "Loading/unloading after accident",
+      "name_ro": "Încărcare/descărcare după accident",
+      "name_tr": "Kaza sonrası yükleme/boşaltma",
+      "price": 70,
+      "currency": "EUR",
+      "unit_bg": "еднократно",
+      "unit_en": "one-time",
+      "unit_ro": "o singură dată",
+      "unit_tr": "tek seferlik",
+      "category": "accident_services"
+    },
+    {
+      "id": "no_hook",
+      "name_bg": "Липсваща кука за теглене",
+      "name_en": "Missing tow hook",
+      "name_ro": "Cârlig de remorcare lipsă",
+      "name_tr": "Çekme kancası eksik",
+      "price": 20,
+      "currency": "EUR",
+      "unit_bg": "еднократно",
+      "unit_en": "one-time",
+      "unit_ro": "o singură dată",
+      "unit_tr": "tek seferlik",
+      "category": "equipment"
+    },
+    {
+      "id": "helper_carts",
+      "name_bg": "Помощни колички",
+      "name_en": "Helper carts",
+      "name_ro": "Cărucioare auxiliare",
+      "name_tr": "Yardımcı arabalar",
+      "price": 30,
+      "currency": "EUR",
+      "unit_bg": "на брой",
+      "unit_en": "per piece",
+      "unit_ro": "per bucată",
+      "unit_tr": "adet başına",
+      "category": "equipment"
+    },
+    {
+      "id": "jump_start",
+      "name_bg": "Подаване на ток",
+      "name_en": "Jump start",
+      "name_ro": "Pornire cu cabluri",
+      "name_tr": "Akü takviyesi",
+      "price": 25,
+      "currency": "EUR",
+      "unit_bg": "еднократно + километри",
+      "unit_en": "one-time + kilometers",
+      "unit_ro": "o singură dată + kilometri",
+      "unit_tr": "tek seferlik + kilometre",
+      "category": "roadside_service",
+      "additional_charge": "1.20 EUR/km"
+    },
+    {
+      "id": "fuel_delivery",
+      "name_bg": "Доставка на гориво",
+      "name_en": "Fuel delivery",
+      "name_ro": "Livrare combustibil",
+      "name_tr": "Yakıt teslimatı",
+      "price": null,
+      "currency": "EUR",
+      "unit_bg": "цена на горивото + километри",
+      "unit_en": "fuel price + kilometers",
+      "unit_ro": "preț combustibil + kilometri",
+      "unit_tr": "yakıt fiyatı + kilometre",
+      "category": "roadside_service",
+      "additional_charge": "1.20 EUR/km"
+    },
+    {
+      "id": "tire_change",
+      "name_bg": "Смяна на спукана гума",
+      "name_en": "Flat tire change",
+      "name_ro": "Schimbare anvelopă spartă",
+      "name_tr": "Patlak lastik değişimi",
+      "price": 25,
+      "currency": "EUR",
+      "unit_bg": "еднократно + километри",
+      "unit_en": "one-time + kilometers",
+      "unit_ro": "o singură dată + kilometri",
+      "unit_tr": "tek seferlik + kilometre",
+      "category": "roadside_service",
+      "additional_charge": "1.20 EUR/km"
+    }
+  ],
+  "weight_categories": [
+    {
+      "max_kg": 2000,
+      "rate": 1.20,
+      "label_bg": "До 2000 кг",
+      "label_en": "Up to 2000 kg",
+      "label_ro": "Până la 2000 kg",
+      "label_tr": "2000 kg'a kadar"
+    },
+    {
+      "max_kg": 2500,
+      "rate": 1.50,
+      "label_bg": "До 2500 кг",
+      "label_en": "Up to 2500 kg",
+      "label_ro": "Până la 2500 kg",
+      "label_tr": "2500 kg'a kadar"
+    },
+    {
+      "max_kg": 3000,
+      "rate": 1.70,
+      "label_bg": "До 3000 кг",
+      "label_en": "Up to 3000 kg",
+      "label_ro": "Până la 3000 kg",
+      "label_tr": "3000 kg'a kadar"
+    },
+    {
+      "max_kg": 99999,
+      "rate": 2.50,
+      "label_bg": "Над 3000 кг",
+      "label_en": "Over 3000 kg",
+      "label_ro": "Peste 3000 kg",
+      "label_tr": "3000 kg üzeri"
+    }
+  ],
+  "surcharges": {
+    "night": {
+      "type": "percentage",
+      "value": 50,
+      "hours_bg": "22:00 - 07:00",
+      "hours_en": "10 PM - 7 AM",
+      "hours_ro": "22:00 - 07:00",
+      "hours_tr": "22:00 - 07:00",
+      "label_bg": "Нощна тарифа",
+      "label_en": "Night rate",
+      "label_ro": "Tarif nocturn",
+      "label_tr": "Gece tarifesi"
+    },
+    "waiting": {
+      "type": "fixed",
+      "value": 30,
+      "unit_bg": "за всеки започнал час",
+      "unit_en": "per started hour",
+      "unit_ro": "per oră începută",
+      "unit_tr": "başlayan saat başına",
+      "label_bg": "Забавяне (не по наша вина)",
+      "label_en": "Waiting time (not our fault)",
+      "label_ro": "Întârziere (nu din vina noastră)",
+      "label_tr": "Bekleme (bizim hatamız değil)"
+    }
+  }
+}
