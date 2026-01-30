@@ -22,6 +22,7 @@
     <link rel="alternate" hreflang="en" href="https://matiyhelp.bg/index-en.html">
     <link rel="alternate" hreflang="ro" href="https://matiyhelp.bg/index-ro.html">
     <link rel="alternate" hreflang="tr" href="https://matiyhelp.bg/index-tr.html">
+    <link rel="alternate" hreflang="x-default" href="https://matiyhelp.bg/index.html">
     
     <link rel="preload" href="images/logotrans.png" as="image" type="image/png">
     
@@ -154,7 +155,12 @@
                 "@id": "https://matiyhelp.bg/index.html#webpage",
                 "url": "https://matiyhelp.bg/index.html",
                 "name": "Пътна Помощ - Матю — Начална страница",
-                "mainEntity": { "@id": "https://matiyhelp.bg/#localbusiness" }
+                "mainEntity": { "@id": "https://matiyhelp.bg/#localbusiness" },
+                "relatedLink": [
+                    "https://www.facebook.com/matiputnapomosht/",
+                    "https://www.instagram.com/matiyhelp91/",
+                    "https://www.tiktok.com/@matiyhelp"
+                ]
             },
             {
                 "@type": "Service",
@@ -197,6 +203,141 @@
                     "https://www.instagram.com/matiyhelp91/",
                     "https://www.tiktok.com/@matiyhelp"
                 ]
+            },
+            {
+                "@type": "SocialMediaPosting",
+                "@id": "https://matiyhelp.bg/#facebook-posting",
+                "headline": "Пътна Помощ Матю - Facebook",
+                "description": "Следете ни във Facebook за актуални новини, съвети за безопасно шофиране и спешни съобщения за пътни условия.",
+                "url": "https://www.facebook.com/matiputnapomosht/",
+                "datePublished": "2024-01-01",
+                "author": { "@id": "https://matiyhelp.bg/#organization" },
+                "sharedContent": {
+                    "@type": "WebPage",
+                    "url": "https://matiyhelp.bg"
+                }
+            },
+            {
+                "@type": "SocialMediaPosting",
+                "@id": "https://matiyhelp.bg/#instagram-posting",
+                "headline": "Пътна Помощ Матю - Instagram",
+                "description": "Вижте нашите услуги и клиентски истории в Instagram. Споделяме полезни съвети за поддръжка на автомобила.",
+                "url": "https://www.instagram.com/matiyhelp91/",
+                "datePublished": "2024-01-01",
+                "author": { "@id": "https://matiyhelp.bg/#organization" },
+                "sharedContent": {
+                    "@type": "WebPage",
+                    "url": "https://matiyhelp.bg"
+                }
+            },
+            {
+                "@type": "SocialMediaPosting",
+                "@id": "https://matiyhelp.bg/#tiktok-posting",
+                "headline": "Пътна Помощ Матю - TikTok",
+                "description": "Кратки видео съвети за безопасно шофиране и демонстрации на нашите услуги в TikTok.",
+                "url": "https://www.tiktok.com/@matiyhelp",
+                "datePublished": "2024-01-01",
+                "author": { "@id": "https://matiyhelp.bg/#organization" },
+                "sharedContent": {
+                    "@type": "WebPage",
+                    "url": "https://matiyhelp.bg"
+                }
+            },
+            {
+                "@type": "ProfilePage",
+                "@id": "https://matiyhelp.bg/#facebook-profile",
+                "name": "Пътна Помощ Матю - Facebook профил",
+                "url": "https://www.facebook.com/matiputnapomosht/",
+                "mainEntity": { "@id": "https://matiyhelp.bg/#organization" },
+                "dateCreated": "2020-01-01"
+            },
+            {
+                "@type": "ProfilePage",
+                "@id": "https://matiyhelp.bg/#instagram-profile",
+                "name": "Пътна Помощ Матю - Instagram профил",
+                "url": "https://www.instagram.com/matiyhelp91/",
+                "mainEntity": { "@id": "https://matiyhelp.bg/#organization" },
+                "dateCreated": "2020-01-01"
+            },
+            {
+                "@type": "ProfilePage",
+                "@id": "https://matiyhelp.bg/#tiktok-profile",
+                "name": "Пътна Помощ Матю - TikTok профил",
+                "url": "https://www.tiktok.com/@matiyhelp",
+                "mainEntity": { "@id": "https://matiyhelp.bg/#organization" },
+                "dateCreated": "2023-01-01"
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Репатриране след ПТП",
+        "description": "Професионално репатриране на автомобили след пътно-транспортни произшествия",
+        "provider": { "@id": "https://matiyhelp.bg/#localbusiness" },
+        "areaServed": ["София", "Годеч", "Калотина", "Петрохан", "Костинброд"],
+        "serviceType": "Репатриране"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Вадене от канавка",
+        "description": "Извличане на автомобили от канавки и дерета",
+        "provider": { "@id": "https://matiyhelp.bg/#localbusiness" },
+        "areaServed": ["София", "Годеч", "Калотина", "Петрохан", "Костинброд"],
+        "serviceType": "Вадене от канавка"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Какви услуги предлага Пътна Помощ Матю?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Предлагаме 24/7 пътна помощ: репатриране, вадене от канавка, подаване на ток, смяна на гуми, доставка на гориво и др."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Какви са цените за услугите?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Цените започват от 50 лв за основни услуги. Репатриране до 2000 кг - 100 лв. Вижте пълния ценоразпис на сайта."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "В кои райони работите?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Работим в София, Годеч, Калотина, Петрохан, Костинброд и околните райони."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Начало",
+                "item": "https://matiyhelp.bg/index.html"
             }
         ]
     }
