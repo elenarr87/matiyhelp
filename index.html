@@ -7,22 +7,22 @@
     <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://maps.app.goo.gl https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://maps.app.goo.gl; frame-src https://maps.app.goo.gl https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self';">
     
-    <title>Пътна Помощ - Матю ЕООД | 24/7 Репатриране София, Годеч, Калотина | 0888 314 855</title>
-    <meta name="description" content="Лицензирана пътна помощ 24/7 в София, Годеч, Калотина, Петрохан, Костинброд. Репатриране, вадене от канавка, подаване на ток, вадене обърнато МПС, помощни колички, липсваща кука. Плащане в брой, карта, Revolut. Обадете се: 0888 314 855">
-    <meta name="keywords" content="пътна помощ, репатриране, евакуатор, годеч, калотина, петрохан, костинброд, софия, 24/7, денонощна">
+    <title>Пътна помощ Матю — 24/7 репатриране в София и околности</title>
+    <meta name="description" content="Лицензирана пътна помощ 24/7 в София и околностите — репатриране, вадене от канавка, подаване на ток. Обадете се: 0888 314 855">
+    <meta name="keywords" content="пътна помощ, репатриране, евакуатор, годеч, калотина, петрохан, костинброд, софия, 24/7, денонощна, 5 места за пътници, онлайн калкулатор за цена, бутон за изпращане на локация">
     
     <!-- SEO and Social Media Meta Tags -->
     <meta name="robots" content="index, follow, max-snippet:160, max-image-preview:large">
     <meta name="author" content="Пътна Помощ - Матю ЕООД">
     <meta name="language" content="bg">
-    <link rel="canonical" href="https://matiyhelp.bg/index.html">
+    <link rel="canonical" href="https://matiyhelp.bg/">
     
     <!-- Multi-language hreflang tags -->
-    <link rel="alternate" hreflang="bg" href="https://matiyhelp.bg/index.html">
-    <link rel="alternate" hreflang="en" href="https://matiyhelp.bg/index-en.html">
-    <link rel="alternate" hreflang="ro" href="https://matiyhelp.bg/index-ro.html">
-    <link rel="alternate" hreflang="tr" href="https://matiyhelp.bg/index-tr.html">
-    <link rel="alternate" hreflang="x-default" href="https://matiyhelp.bg/index.html">
+    <link rel="alternate" hreflang="bg" href="https://matiyhelp.bg/">
+    <link rel="alternate" hreflang="en" href="https://matiyhelp.bg/en.html">
+    <link rel="alternate" hreflang="ro" href="https://matiyhelp.bg/ro.html">
+    <link rel="alternate" hreflang="tr" href="https://matiyhelp.bg/tr.html">
+    <link rel="alternate" hreflang="x-default" href="https://matiyhelp.bg/">
     
     <link rel="preload" href="images/logotrans.png" as="image" type="image/png">
     
@@ -33,7 +33,7 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://matiyhelp.bg/index.html">
+    <meta property="og:url" content="https://matiyhelp.bg/">
     <meta property="og:title" content="Пътна Помощ - Матю ЕООД | 24/7 Репатриране София, Годеч, Калотина | 0888 314 855">
     <meta property="og:description" content="Лицензирана пътна помощ 24/7 в София, Годеч, Калотина, Петрохан, Костинброд. Репатриране, вадене от канавка, подаване на ток. Плащане в брой, карта, Revolut. Обадете се: 0888 314 855">
     <meta property="og:image" content="https://matiyhelp.bg/images/logotrans.png">
@@ -46,7 +46,7 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://matiyhelp.bg/index.html">
+    <meta name="twitter:url" content="https://matiyhelp.bg/">
     <meta name="twitter:title" content="Пътна Помощ - Матю ЕООД | 24/7 Репатриране София, Годеч, Калотина | 0888 314 855">
     <meta name="twitter:description" content="Лицензирана пътна помощ 24/7 в София, Годеч, Калотина, Петрохан, Костинброд. Репатриране, вадене от канавка, подаване на ток. Плащане в брой, карта, Revolut. Обадете се: 0888 314 855">
     <meta name="twitter:image" content="https://matiyhelp.bg/images/logotrans.png">
@@ -58,12 +58,12 @@
         "@context": "https://schema.org",
         "@graph": [
             {
-                "@type": ["LocalBusiness", "AutoRepair"],
+                "@type": ["LocalBusiness", "AutomotiveBusiness", "AutoRepair"],
                 "@id": "https://matiyhelp.bg/#localbusiness",
                 "name": "Пътна Помощ - Матю ЕООД",
                 "description": "Лицензирана пътна помощ 24/7 в София, Годеч, Калотина, Петрохан, Костинброд. Репатриране, вадене от канавка, подаване на ток.",
                 "url": "https://matiyhelp.bg/index.html",
-                "telephone": "+359888314855",
+                "telephone": "+359 888 314 855",
                 "address": {
                     "@type": "PostalAddress",
                     "streetAddress": "ул. Република 23",
@@ -76,7 +76,12 @@
                     "latitude": "43.0167",
                     "longitude": "23.0333"
                 },
-                "openingHours": "Mo-Su 00:00-23:59",
+                "openingHours": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
                 "priceRange": "€€",
                 "paymentAccepted": "Cash, Credit Card, Revolut",
                 "currenciesAccepted": "EUR, BGN",
@@ -148,11 +153,74 @@
                             }
                         }
                     ]
+                },
+                "makesOffer": {
+                    "@type": "AggregateOffer",
+                    "@id": "https://matiyhelp.bg/#aggregateoffer",
+                    "name": "Групови оферти за пътна помощ",
+                    "description": "Комплексни услуги за извличане, репатриране и помощ при аварии",
+                    "priceCurrency": "EUR",
+                    "lowPrice": "20",
+                    "highPrice": "200",
+                    "offerCount": 10
                 }
             },
             {
+                "@type": "Product",
+                "name": "Пътна помощ Матю ЕООД",
+                "description": "Комплексни услуги за пътна помощ в България с 24/7 достъпност.",
+                "brand": { "@id": "https://matiyhelp.bg/#organization" },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5",
+                    "reviewCount": "6"
+                },
+                "review": [
+                    {
+                        "@type": "Review",
+                        "author": {
+                            "@type": "Person",
+                            "name": "Веселин Борисов"
+                        },
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5"
+                        },
+                        "reviewBody": "Точен коректен отзова се много бързо и професионално реагиране .Препоръчвам с две ръце"
+                    },
+                    {
+                        "@type": "Review",
+                        "author": {
+                            "@type": "Person",
+                            "name": "Yordan Yordanov"
+                        },
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5"
+                        },
+                        "reviewBody": "Много бързо отзоваване. Страхотно отношение, цени и бързо реагиране. Трябваше ми пътна помощ и не се поколебах да използвам услугите на МАТЮ! Останах очарован колко бързо се случи всичко. Със сигурност ще използвам услигите му отново ако се налага!"
+                    },
+                    {
+                        "@type": "Review",
+                        "author": {
+                            "@type": "Person",
+                            "name": "Божидар Кожухаров"
+                        },
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5"
+                        },
+                        "reviewBody": "Коректност, качество и супер добро отношение към нас. Препотъчвам ги с две ръце! а ние работим само с реални данни!"
+                    }
+                ],
+                "offers": { "@id": "https://matiyhelp.bg/#aggregateoffer" }
+            },
+            {
                 "@type": "WebPage",
-                "@id": "https://matiyhelp.bg/index.html#webpage",
+                "@id": "https://matiyhelp.bg/#webpage",
                 "url": "https://matiyhelp.bg/index.html",
                 "name": "Пътна Помощ - Матю — Начална страница",
                 "mainEntity": { "@id": "https://matiyhelp.bg/#localbusiness" },
@@ -194,7 +262,7 @@
                 "logo": "https://matiyhelp.bg/images/logotrans.png",
                 "contactPoint": {
                     "@type": "ContactPoint",
-                    "telephone": "+359888314855",
+                    "telephone": "+359 888 314 855",
                     "contactType": "Customer Service",
                     "availableLanguage": "Bulgarian"
                 },
@@ -270,6 +338,27 @@
         ]
     }
     </script>
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://moverstudio.online/#organization",
+            "name": "Mover Studio",
+            "url": "https://moverstudio.online",
+            "logo": "https://moverstudio.online/logo.png",
+            "sameAs": ["https://www.facebook.com/moverstudio"]
+        }
+        </script>
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://matiyhelp.bg",
+            "creator": { "@id": "https://moverstudio.online/#organization" }
+        }
+        </script>
 
     <script type="application/ld+json">
     {
@@ -505,6 +594,7 @@
         }
 
         .hero h1 {
+            margin-top: 1rem;
             margin-bottom: 1.5rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
@@ -1268,6 +1358,68 @@
             font-size: 1.1rem;
             font-weight: 600;
         }
+
+        /* FAQ Preview Styles */
+        .faq-preview {
+            background: var(--bg-alt);
+            padding: 4rem 0;
+        }
+
+        .faq-preview .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .faq-preview .section-title {
+            font-size: 2.5rem;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-preview .section-header p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        .faq-preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .faq-preview-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border: 1px solid #e5e7eb;
+        }
+
+        .faq-preview-item h3 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .faq-preview-item p {
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .faq-preview-cta {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .faq-preview-cta .btn {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+        }
     </style>
 </head>
 <body>
@@ -1280,7 +1432,7 @@
                 <span>Пътна Помощ Матю</span>
             </a>
             <div class="emergency-contact">
-                <a href="tel:0888314855" class="phone-number">📞 0888 31 48 55</a>
+                <a href="tel:+359888314855" class="phone-number">📞 +359 888 314 855</a>
                 <span class="emergency-badge">24/7</span>
                 <p class="emergency-text">Репатриране</p>
             </div>
@@ -1293,14 +1445,14 @@
     <section class="hero">
             <div class="hero-content animate-in">
             <img src="images/logotrans.png" alt="Лого — Пътна Помощ - Матю" class="hero-logo" decoding="async" loading="lazy">
-            <div class="language-switcher" style="background: rgba(0,0,0,0.3); padding: 0.5rem 1.5rem; text-align: center; border-radius: 20px; margin-bottom: 1rem;">
+            <div class="language-switcher">
                 <a href="index.html" class="lang-link active">🇧🇬 BG</a>
-                <a href="index-en.html" class="lang-link">🇬🇧 EN</a>
-                <a href="index-ro.html" class="lang-link">🇷🇴 RO</a>
-                <a href="index-tr.html" class="lang-link">🇹🇷 TR</a>
+                <a href="en.html" class="lang-link">🇬🇧 EN</a>
+                <a href="ro.html" class="lang-link">🇷🇴 RO</a>
+                <a href="tr.html" class="lang-link">🇹🇷 TR</a>
             </div>
-            <h1>Бърза и Надеждна Пътна Помощ 24/7</h1>
-            <p class="hero-subtitle">Лицензирана пътна помощ в София, Годеч, Калотина, Петрохан, Костинброд и околните райони</p>
+            <h1>Годеч Петрохан Калотина</h1>
+            <p class="hero-subtitle">Лицензирана пътна помощ в София, Годеч, Калотина, Петрохан, Костинброд и околните райони. Разполагаме с 5 места за пътници, онлайн калкулатор за цена и бутон за изпращане на локация.</p>
             
             <div class="hero-features">
                 <div class="hero-feature">Реагираме за минути</div>
@@ -1310,7 +1462,7 @@
             </div>
 
             <div class="cta-buttons">
-                <a href="tel:0888314855" class="btn btn-primary" aria-label="Обади се сега на телефон 0888 31 48 55">
+                <a href="tel:+359888314855" class="btn btn-primary" aria-label="Обади се сега на телефон +359 888 314 855">
                     📞 Обадете се сега
                 </a>
                 <a href="calculator.html" class="btn btn-secondary" aria-label="Отвори калкулатора за изчисляване на цените">
@@ -1648,7 +1800,7 @@
             <div class="contact-card">
                 <div class="icon">📞</div>
                 <h3>Телефон</h3>
-                <a href="tel:0888314855">0888 31 48 55</a>
+                <a href="tel:+359888314855">+359 888 314 855</a>
                 <p style="margin-top: 0.5rem; color: var(--text-light);">Денонощно 24/7</p>
             </div>
 
@@ -1683,6 +1835,40 @@
                     За по-бърза помощ
                 </p>
             </div>
+        </div>
+    </section>
+
+    <!-- FAQ Preview Section -->
+    <section class="faq-preview">
+        <div class="section-header">
+            <h2 class="section-title">Често Задавани Въпроси</h2>
+            <p>Отговори на най-популярните въпроси за нашите услуги</p>
+        </div>
+
+        <div class="faq-preview-grid">
+            <div class="faq-preview-item">
+                <h3>Работите ли 24/7?</h3>
+                <p>Да, ние работим 24 часа в денонощието, 7 дни в седмицата, включително празници. Нашият екип е винаги готов да ви помогне при аварийни ситуации.</p>
+            </div>
+
+            <div class="faq-preview-item">
+                <h3>Колко време отнема пристигането?</h3>
+                <p>Времето за пристигане зависи от вашето местоположение: в градски условия 30-60 минути, в извънградски райони 30-60 минути, в планински райони 30-60 минути. При спешни случаи се стремим да пристигнем възможно най-бързо.</p>
+            </div>
+
+            <div class="faq-preview-item">
+                <h3>Как се формират цените?</h3>
+                <p>Нашите цени включват базова цена за услугата, километраж (€1.20 за километър в двете посоки) и допълнителни услуги според каталога. Предлагаме безплатна консултация и точен разчет предварително.</p>
+            </div>
+
+            <div class="faq-preview-item">
+                <h3>Приемате ли кредитни карти?</h3>
+                <p>Да, приемаме плащане с кредитни и дебитни карти (VISA, MasterCard), банково превод, в брой и по банков път за фирми. Всички плащания се извършват на място след приключване на услугата.</p>
+            </div>
+        </div>
+
+        <div class="faq-preview-cta">
+            <a href="faq.html" class="btn btn-secondary">Вижте всички въпроси и отговори</a>
         </div>
     </section>
 
@@ -1733,7 +1919,7 @@
             <div class="footer-section">
                 <h3>Контакти</h3>
                 <ul>
-                    <li>📞 <a href="tel:0888314855">0888 31 48 55</a></li>
+                    <li>📞 <a href="tel:+359888314855">+359 888 314 855</a></li>
                     <li>📍 ул. Република 23, Годеч</li>
                     <li>🕐 24/7 Денонощно</li>
                     <li>💳 Брой / Карта / Revolut</li>
@@ -1749,7 +1935,7 @@
 
     <!-- Floating CTA -->
     <div class="floating-cta">
-        <a href="tel:0888314855">
+        <a href="tel:+359888314855">
             📞
         </a>
     </div>

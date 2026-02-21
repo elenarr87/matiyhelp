@@ -4,18 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://maps.googleapis.com https://www.google.com; frame-src https://www.google.com https://maps.google.com; object-src 'none'; base-uri 'self'; form-action 'self';">
-    <title>Пътна Помощ Бързия - Матю ЕООД | Експертни услуги 24/7: вадене от кал и сняг, помощ при ПТП</title>
-    <meta name="description" content="Пътна помощ Бързия - експертни услуги 24/7. Вадене от кал, сняг и планински терени, помощ при ПТП. Надеждна помощ за Бързия и региона - Матю ЕООД.">
-    <meta name="keywords" content="пътна помощ бързия, вадене от кал бързия, сняг бързия, планински терени бързия, помощ при ПТП бързия">
+    <title>Пътна Помощ Бързия — Матю ЕООД</title>
+    <meta name="description" content="Пътна помощ в Бързия 24/7 — вадене от кал и сняг, репатриране при ПТП.">
+    <meta name="keywords" content="пътна помощ бързия, вадене от кал бързия, сняг бързия, планински терени бързия, помощ при ПТП бързия, онлайн калкулатор за цена, 5 места за пътници, бутон за изпращане на локация">
     <meta name="robots" content="index, follow, max-snippet:160, max-image-preview:large">
     <link rel="canonical" href="https://matiyhelp.bg/areas/burzia.html">
     <meta property="og:title" content="Пътна Помощ Бързия - Матю ЕООД">
-    <meta property="og:description" content="Професионална пътна помощ в Бързия 24/7. Извличане, акумулатор, гуми, гориво. Без скрити такси.">
+    <meta property="og:description" content="Професионална пътна помощ в Бързия 24/7. Извличане, репатрак, гуми, гориво. Без скрити такси.">
     <meta property="og:image" content="https://matiyhelp.bg/images/logotrans.png">
     <meta property="og:url" content="https://matiyhelp.bg/areas/burzia.html">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://moverstudio.online/#organization",
+            "name": "Mover Studio",
+            "url": "https://moverstudio.online",
+            "logo": "https://moverstudio.online/logo.png",
+            "sameAs": ["https://www.facebook.com/moverstudio"]
+        }
+        </script>
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://matiyhelp.bg",
+            "creator": { "@id": "https://moverstudio.online/#organization" }
+        }
+        </script>
+
     
 
     <style>
@@ -719,29 +741,322 @@
                 font-size: 1.2rem;
             }
         }
+
+        /* FAQ Preview Styles */
+        .faq-preview {
+            background: var(--bg-alt);
+            padding: 4rem 0;
+        }
+
+        .faq-preview .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .faq-preview .section-title {
+            font-size: 2.5rem;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-preview .section-header p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        .faq-preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .faq-preview-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border: 1px solid #e5e7eb;
+        }
+
+        .faq-preview-item h3 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .faq-preview-item p {
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .faq-preview-cta {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .faq-preview-cta .btn {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+        }
         </style>
         <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@graph": [
                 {
+                    "@id": "https://matiyhelp.bg/#organization",
+                    "@type": "Organization",
+                    "name": "Пътна Помощ - Матю ЕООД",
+                    "url": "https://matiyhelp.bg",
+                    "logo": "https://matiyhelp.bg/images/logotrans.png",
+                    "description": "Професионални услуги за пътна помощ в България. 24/7 достъпност, извличане от кал, доставка на гориво, смяна на гуми.",
+                    "telephone": "+359 888 314 855",
+                    "email": "info@matiyhelp.bg",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "ул. Независимост 15",
+                        "addressLocality": "София",
+                        "postalCode": "1000",
+                        "addressCountry": "BG"
+                    },
+                    "sameAs": [
+                        "https://www.facebook.com/matiputnapomosht/",
+                        "https://www.instagram.com/matiyhelp91/",
+                        "https://www.tiktok.com/@matiyhelp",
+                        "https://maps.app.goo.gl/ScpBJ4qf2u2QGk3C7"
+                    ],
+                    "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "5",
+                        "reviewCount": "6"
+                    }
+                },
+                {
+                    "@id": "https://matiyhelp.bg/#localbusiness",
+                    "@type": ["LocalBusiness", "AutomotiveBusiness"],
+                    "name": "Пътна помощ Бързия",
+                    "description": "Пътна помощ по път E79 в района на Бързия. Вадене от кал и сняг в тежък терен, извличане на заседнали автомобили.",
+                    "url": "https://matiyhelp.bg/areas/burzia.html",
+                    "telephone": "+359 888 314 855",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Бързия",
+                        "addressCountry": "BG"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": "42.75",
+                        "longitude": "23.25"
+                    },
+                    "openingHoursSpecification": {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                        "opens": "00:00",
+                        "closes": "23:59"
+                    },
+                    "priceRange": "20-150 EUR",
+                    "paymentAccepted": "Cash, Credit Card",
+                    "currenciesAccepted": "EUR, BGN"
+                },
+                {
                     "@type": "WebPage",
-                    "mainEntity": { "@id": "https://matiyhelp.bg/#localbusiness" }
+                    "@id": "https://matiyhelp.bg/areas/burzia.html",
+                    "url": "https://matiyhelp.bg/areas/burzia.html",
+                    "name": "Пътна помощ Бързия - Извличане от тежък терен",
+                    "description": "Пътна помощ по път E79 в района на Бързия. Вадене от кал и сняг в тежък терен, извличане на заседнали автомобили. 24/7 достъпност.",
+                    "inLanguage": "bg",
+                    "isPartOf": {
+                        "@id": "https://matiyhelp.bg"
+                    },
+                    "mainEntity": { "@id": "https://matiyhelp.bg/#localbusiness" },
+                    "breadcrumb": { "@id": "https://matiyhelp.bg/areas/burzia.html#breadcrumb" }
                 },
                 {
                     "@type": "BreadcrumbList",
+                    "@id": "https://matiyhelp.bg/areas/burzia.html#breadcrumb",
                     "itemListElement": [
                         {
                             "@type": "ListItem",
                             "position": 1,
                             "name": "Начало",
-                            "item": "https://matiyhelp.bg/index.html"
+                            "item": "https://matiyhelp.bg/"
                         },
                         {
                             "@type": "ListItem",
                             "position": 2,
                             "name": "Бързия",
                             "item": "https://matiyhelp.bg/areas/burzia.html"
+                        }
+                    ]
+                },
+                {
+                    "@type": "Service",
+                    "@id": "https://matiyhelp.bg/areas/burzia.html#service1",
+                    "name": "Вадене от кал Бързия",
+                    "description": "Извличане на автомобили заседнали в кал или сняг в тежък терен по път E79.",
+                    "provider": { "@id": "https://matiyhelp.bg/#localbusiness" },
+                    "areaServed": {
+                        "@type": "Place",
+                        "name": "Бързия"
+                    },
+                    "serviceType": "Автомобилни услуги"
+                },
+                {
+                    "@type": "Service",
+                    "@id": "https://matiyhelp.bg/areas/burzia.html#service2",
+                    "name": "Извличане от сняг Бързия",
+                    "description": "Помощ при заседнали автомобили в снежни условия, почистване и извличане.",
+                    "provider": { "@id": "https://matiyhelp.bg/#localbusiness" },
+                    "areaServed": {
+                        "@type": "Place",
+                        "name": "Бързия"
+                    },
+                    "serviceType": "Автомобилни услуги"
+                },
+                {
+                    "@type": "Service",
+                    "@id": "https://matiyhelp.bg/areas/burzia.html#service3",
+                    "name": "Доставка на гориво Бързия",
+                    "description": "Доставка на гориво при изчерпване в отдалечени райони по път E79.",
+                    "provider": { "@id": "https://matiyhelp.bg/#localbusiness" },
+                    "areaServed": {
+                        "@type": "Place",
+                        "name": "Бързия"
+                    },
+                    "serviceType": "Автомобилни услуги"
+                },
+                {
+                    "@type": "OfferCatalog",
+                    "@id": "https://matiyhelp.bg/areas/burzia.html#offercatalog",
+                    "name": "Каталог услуги Бързия",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": { "@id": "https://matiyhelp.bg/areas/burzia.html#service1" },
+                            "price": "50",
+                            "priceCurrency": "EUR"
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": { "@id": "https://matiyhelp.bg/areas/burzia.html#service2" },
+                            "price": "60",
+                            "priceCurrency": "EUR"
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": { "@id": "https://matiyhelp.bg/areas/burzia.html#service3" },
+                            "price": "30",
+                            "priceCurrency": "EUR"
+                        }
+                    ]
+                },
+                {
+                    "@type": "AggregateOffer",
+                    "@id": "https://matiyhelp.bg/areas/burzia.html#aggregateoffer",
+                    "lowPrice": "20",
+                    "highPrice": "150",
+                    "priceCurrency": "EUR",
+                    "offerCount": "3",
+                    "offers": { "@id": "https://matiyhelp.bg/areas/burzia.html#offercatalog" }
+                },
+                {
+                    "@type": "Product",
+                    "name": "Пътна помощ Бързия",
+                    "description": "Услуги за извличане от тежък терен в района на Бързия по път E79.",
+                    "brand": { "@id": "https://matiyhelp.bg/#organization" },
+                    "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "5",
+                        "reviewCount": "6"
+                    },
+                    "review": [
+                        {
+                            "@type": "Review",
+                            "author": {
+                                "@type": "Person",
+                                "name": "Веселин Борисов"
+                            },
+                            "reviewRating": {
+                                "@type": "Rating",
+                                "ratingValue": "5",
+                                "bestRating": "5"
+                            },
+                            "reviewBody": "Точен коректен отзова се много бързо и професионално реагиране .Препоръчвам с две ръце"
+                        },
+                        {
+                            "@type": "Review",
+                            "author": {
+                                "@type": "Person",
+                                "name": "Yordan Yordanov"
+                            },
+                            "reviewRating": {
+                                "@type": "Rating",
+                                "ratingValue": "5",
+                                "bestRating": "5"
+                            },
+                            "reviewBody": "Много бързо отзоваване. Страхотно отношение, цени и бързо реагиране. Трябваше ми пътна помощ и не се поколебах да използвам услугите на МАТЮ! Останах очарован колко бързо се случи всичко. Със сигурност ще използвам услигите му отново ако се налага!"
+                        },
+                        {
+                            "@type": "Review",
+                            "author": {
+                                "@type": "Person",
+                                "name": "Божидар Кожухаров"
+                            },
+                            "reviewRating": {
+                                "@type": "Rating",
+                                "ratingValue": "5",
+                                "bestRating": "5"
+                            },
+                            "reviewBody": "Коректност, качество и супер добро отношение към нас. Препотъчвам ги с две ръце! а ние работим само с реални данни!"
+                        }
+                    ],
+                    "offers": { "@id": "https://matiyhelp.bg/areas/burzia.html#aggregateoffer" }
+                },
+                {
+                    "@type": "GeoCoordinates",
+                    "@id": "https://matiyhelp.bg/areas/burzia.html#coordinates",
+                    "latitude": "42.75",
+                    "longitude": "23.25"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "@id": "https://matiyhelp.bg/areas/burzia.html#openinghours",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                    "opens": "00:00",
+                    "closes": "23:59",
+                    "description": "24/7 достъпност"
+                },
+                {
+                    "@type": "FAQPage",
+                    "mainEntity": [
+                        {
+                            "@type": "Question",
+                            "name": "Как да поискам помощ в Бързия?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Обади се на 0888 31 48 55 или използвай GPS локацията за бързо пристигане."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Работите ли при сняг?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Да, специализираме в извличане от сняг и тежки зимни условия."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Колко струва извличането?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Цените започват от 50 EUR в зависимост от сложността на ситуацията."
+                            }
                         }
                     ]
                 }
@@ -758,7 +1073,7 @@
                 <span>Пътна Помощ Матю</span>
             </a>
             <div class="emergency-contact">
-                <a href="tel:0888314855" class="phone-number">📞 0888 31 48 55</a>
+                <a href="tel:+359888314855" class="phone-number">📞 +359 888 314 855</a>
                 <span class="emergency-badge">24/7 на линия</span>
             </div>
         </div>
@@ -774,15 +1089,15 @@
         <div class="hero-content">
             <div class="language-switcher" style="background: rgba(0,0,0,0.3); padding: 0.5rem 1.5rem; text-align: center; border-radius: 20px; margin-bottom: 1rem;">
                 <a href="../index.html" class="lang-link active">🇧🇬 BG</a>
-                <a href="../index-en.html" class="lang-link">🇬🇧 EN</a>
-                <a href="../index-ro.html" class="lang-link">🇷🇴 RO</a>
-                <a href="../index-tr.html" class="lang-link">🇹🇷 TR</a>
+                <a href="../en.html" class="lang-link">🇬🇧 EN</a>
+                <a href="../ro.html" class="lang-link">🇷🇴 RO</a>
+                <a href="../tr.html" class="lang-link">🇹🇷 TR</a>
             </div>
             <img src="../images/logotrans.png" alt="Пътна Помощ Матю" class="hero-logo" loading="lazy" decoding="async">
             <h1 class="hero-title">Пътна Помощ Бързия</h1>
-            <p class="hero-subtitle">Експертна пътна помощ в Бързия и планинските райони. Специализирани услуги: вадене от кал и сняг, помощ при ПТП. 24/7 подкрепа без скрити такси.</p>
+            <p class="hero-subtitle">Експертна пътна помощ по път E79, в района на Бързия. Специализирани услуги: вадене от кал и сняг, помощ при ПТП. 24/7 подкрепа без скрити такси. Разполагаме с 5 места за пътници, онлайн калкулатор за цена и бутон за изпращане на локация.</p>
             <div class="hero-ctas">
-                <a href="tel:0888314855" class="btn btn-primary">
+                <a href="tel:+359888314855" class="btn btn-primary">
                     📞 Обади се сега
                 </a>
                 <a href="../calculator.html" class="btn btn-secondary">
@@ -811,7 +1126,7 @@
             <div class="service-card">
                 <span class="service-icon">⛽</span>
                 <h3 class="service-title">Доставка на гориво</h3>
-                <p class="service-description">Доставка на бензин, дизел или газ на място. Винаги на склад имаме резервни количества.</p>
+                <p class="service-description">Доставка на бензин или дизел на място. Винаги на склад имаме резервни количества.</p>
             </div>
 
             <div class="service-card">
@@ -857,11 +1172,11 @@
             </div>
             <div class="service-card">
                 <h3 class="service-title"><a href="sofia.html" aria-label="Пътна помощ София">София</a></h3>
-                <p class="service-description">Градски услуги в София и кварталите.</p>
+                <p class="service-description">Услуги в София и кварталите.</p>
             </div>
             <div class="service-card">
                 <h3 class="service-title"><a href="kostinbrod.html" aria-label="Пътна помощ Костинброд">Костинброд</a></h3>
-                <p class="service-description">Бърза помощ за Костинброд и пътя към София.</p>
+                <p class="service-description">Бърза помощ за Костинброд и Ломско шосе.</p>
             </div>
         </div>
     </section>
@@ -1020,6 +1335,40 @@
                     За по-бърза помощ
                 </p>
             </div>
+        </div>
+    </section>
+
+    <!-- FAQ Preview Section -->
+    <section class="faq-preview">
+        <div class="section-header">
+            <h2 class="section-title">Често Задавани Въпроси</h2>
+            <p>Отговори на най-популярните въпроси за нашите услуги</p>
+        </div>
+
+        <div class="faq-preview-grid">
+            <div class="faq-preview-item">
+                <h3>Работите ли 24/7?</h3>
+                <p>В района на Бързия работим 24 часа в денонощието, 7 дни в седмицата, включително празници. Нашият екип е винаги готов да ви помогне при аварийни ситуации.</p>
+            </div>
+
+            <div class="faq-preview-item">
+                <h3>Колко време отнема пристигането?</h3>
+                <p>В района на Бързия пристигаме средно за 30-60 минути в зависимост от условията, трафика и времето на денонощието. При спешни случаи се стремим да пристигнем възможно най-бързо.</p>
+            </div>
+
+            <div class="faq-preview-item">
+                <h3>Как се формират цените?</h3>
+                <p>В района на Бързия нашите цени включват базова цена за услугата, километраж (€1.20 за километър в двете посоки) и допълнителни услуги според каталога. Предлагаме безплатна консултация и точен разчет предварително.</p>
+            </div>
+
+            <div class="faq-preview-item">
+                <h3>Приемате ли кредитни карти?</h3>
+                <p>В района на Бързия приемаме плащане с кредитни и дебитни карти (VISA, MasterCard), банково превод, в брой и по банков път за фирми. Всички плащания се извършват на място след приключване на услугата.</p>
+            </div>
+        </div>
+
+        <div class="faq-preview-cta">
+            <a href="../faq.html" class="btn btn-secondary">Вижте всички въпроси и отговори</a>
         </div>
     </section>
 
