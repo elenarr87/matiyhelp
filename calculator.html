@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://maps.googleapis.com https://www.google.com; frame-src https://www.google.com https://maps.google.com; object-src 'none'; base-uri 'self'; form-action 'self';">
+    <meta name="robots" content="noindex, follow">
+        <title>Калкулатор цени — Пътна помощ Матю</title>
+        <meta name="description" content="Изчислете цена за репатриране и услуги онлайн. Без скрити такси.">
+    <meta name="keywords" content="калкулатор цени, пътна помощ, репатриране, годеч, калотина, петрохан, костинброд, цена">
+    <link rel="canonical" href="https://matiyhelp.bg/calculator.html">
+    <link rel="alternate" hreflang="bg" href="https://matiyhelp.bg/calculator.html">
+    <link rel="alternate" hreflang="en" href="https://matiyhelp.bg/calculator-en.html">
+    <link rel="alternate" hreflang="ro" href="https://matiyhelp.bg/calculator-ro.html">
+    <link rel="alternate" hreflang="tr" href="https://matiyhelp.bg/calculator-tr.html">
+    <meta property="og:title" content="Калкулатор на цени - Пътна Помощ Матю ЕООД">
+    <meta property="og:description" content="Изчислете цената на пътна помощ онлайн. Репатриране, вадене от канавка, подаване на ток. Без скрити такси.">
+    <meta property="og:image" content="https://matiyhelp.bg/images/logotrans.png">
+    <meta property="og:url" content="https://matiyhelp.bg/calculator.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebApplication",
+                "name": "Калкулатор на цени за пътна помощ",
+                "description": "Онлайн калкулатор за изчисляване на цените за пътна помощ",
+                "url": "https://matiyhelp.bg/calculator.html",
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Any",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "EUR"
+                },
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Пътна Помощ - Матю ЕООД",
+                    "telephone": "+359 888 314 855"
+                }
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://matiyhelp.bg/calculator.html#webpage",
+                "url": "https://matiyhelp.bg/calculator.html",
+                "name": "Калкулатор на цени - Пътна Помощ Матю ЕООД",
+                "mainEntity": { "@id": "https://matiyhelp.bg/#localbusiness" }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Начало",
+                        "item": "https://matiyhelp.bg/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Калкулатор",
+                        "item": "https://matiyhelp.bg/calculator.html"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://moverstudio.online/#organization",
+            "name": "Mover Studio",
+            "url": "https://moverstudio.online",
+            "logo": "https://moverstudio.online/logo.png",
+            "sameAs": ["https://www.facebook.com/moverstudio"]
+        }
+        </script>
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://matiyhelp.bg",
+            "creator": { "@id": "https://moverstudio.online/#organization" }
+        }
+        </script>
+
+    <style>
+        :root {
+            --primary: #E63946;
+            --primary-dark: #9D0208;
+            --secondary: #050505;
+            --accent: #8C5A00;
+            --text: #333;
+            --text-light: #666;
+            --bg: #FFFFFF;
+            --bg-alt: #F8F8F8;
+            --success: #047857;
+            --warning: #F59E0B;
+            --shadow: rgba(0,0,0,0.1);
+            --shadow-lg: rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+        h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+        h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+
+        /* Language Switcher */
+        .language-switcher {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .lang-link {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            color: var(--text-light);
+        }
+
+        .lang-link:hover {
+            background: var(--bg-alt);
+            color: var(--primary);
+        }
+
+        .lang-link.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--secondary) 0%, #2A2A2A 100%);
+            color: white;
+            padding: 1rem 0;
+            position: relative;
+            z-index: 1000;
+            box-shadow: 0 4px 20px var(--shadow-lg);
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            gap: 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--accent);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            height: 2rem;
+            width: auto;
+        }
+
+        .emergency-contact {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .phone-number {
+            font-size: clamp(1.25rem, 3vw, 2rem);
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            letter-spacing: 1px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        .emergency-badge {
+            background: var(--primary);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(255,69,0,0.4);
+        }
+
+        .emergency-text {
+            font-size: 0.75rem;
+            color: var(--accent);
+            margin-top: 0.25rem;
+            text-align: center;
+            opacity: 0.9;
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: var(--bg-alt);
+            padding: 1rem 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumbs a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumbs span {
+            color: var(--text-light);
+        }
+
+        /* Section */
+        .section {
+            padding: 5rem 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-alt {
+            background: var(--bg-alt);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        /* Price Calculator */
+        .calculator {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 40px rgba(255,69,0,0.3);
+            max-width: 700px;
+            margin: 2rem auto;
+        }
+
+        .calculator h3 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: rgba(255,255,255,0.95);
+            color: var(--text);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: 3px solid var(--accent);
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            cursor: pointer;
+            padding: 0.75rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .checkbox-label:hover {
+            background: rgba(255,255,255,0.15);
+        }
+
+        .checkbox-label input {
+            width: auto;
+            cursor: pointer;
+        }
+
+        .price-result {
+            background: rgba(0,0,0,0.2);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .price-result h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .total-price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .price-breakdown {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .breakdown-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Pricing Table */
+        .pricing-table {
+            overflow-x: auto;
+            margin-top: 2rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 4px 20px var(--shadow);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: var(--secondary);
+            color: white;
+        }
+
+        th, td {
+            padding: 1.25rem;
+            text-align: left;
+        }
+
+        th {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #E5E7EB;
+            transition: background 0.2s;
+        }
+
+        tbody tr:hover {
+            background: var(--bg-alt);
+        }
+
+        tbody tr:last-child {
+            border-bottom: none;
+        }
+
+        .price-cell {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        /* Important Notes */
+        .important-notes {
+            background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+            border-left: 6px solid var(--warning);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .important-notes h3 {
+            color: #92400E;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .important-notes ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .important-notes li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #78350F;
+        }
+
+        .important-notes li::before {
+            content: '⚠️';
+            position: absolute;
+            left: 0;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--secondary);
+            color: white;
+            padding: 3rem 1.5rem 1.5rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        .social-link:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+
+        /* Floating CTA */
+        .floating-cta {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 999;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .floating-cta a {
+            background: var(--primary);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 8px 30px rgba(255,69,0,0.5);
+            text-decoration: none;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            padding: 0;
+        }
+
+        .floating-cta a:hover {
+            background: var(--primary-dark);
+            box-shadow: 0 12px 40px rgba(255,69,0,0.6);
+        }
+
+        /* Floating Location Button */
+        .floating-location {
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+            z-index: 999;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .floating-location button {
+            background: var(--success);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 8px 30px rgba(16,185,129,0.5);
+            border: none;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            padding: 0;
+        }
+
+        .floating-location button:hover {
+            background: #059669;
+            box-shadow: 0 12px 40px rgba(16,185,129,0.6);
+            transform: translateY(-2px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-top {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .emergency-contact {
+                flex-direction: column;
+            }
+
+            .section {
+                padding: 3rem 1rem;
+            }
+
+            .calculator {
+                padding: 2rem 1.5rem;
+            }
+
+            .total-price {
+                font-size: 2rem;
+            }
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th, td {
+                padding: 0.75rem;
+            }
+
+            .floating-cta {
+                bottom: 1rem;
+                right: 1rem;
+            }
+
+            .floating-cta a {
+                width: 50px;
+                height: 50px;
+                font-size: 1.25rem;
+            }
+
+            .floating-location {
+                bottom: 1rem;
+                left: 1rem;
+            }
+
+            .floating-location button {
+                width: 50px;
+                height: 50px;
+                font-size: 1.25rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-in {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px var(--shadow);
+            text-align: center;
+        }
+
+        .contact-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-card h3 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        .contact-card a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+        </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <a href="index.html" class="logo">
+                <img src="images/logotrans.png" alt="Пътна Помощ Матю" class="logo-icon">
+                <span>Пътна Помощ Матю</span>
+            </a>
+            <div class="emergency-contact">
+                <a href="tel:+359888314855" class="phone-number">📞 +359 888 314 855</a>
+                <span class="emergency-badge">24/7</span>
+                <p class="emergency-text">На разположение</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <a href="index.html">Начало</a> <span>></span> <span>Калкулатор на цени</span>
+    </nav>
+
+    <!-- Language Switcher -->
+    <div style="background: rgba(0,0,0,0.3); padding: 0.5rem 1.5rem; text-align: center; border-radius: 20px; margin: 1rem auto; max-width: 600px;">
+        <div class="language-switcher">
+            <a href="calculator.html" class="lang-link active">🇧🇬 BG</a>
+            <a href="calculator-en.html" class="lang-link">🇬🇧 EN</a>
+            <a href="calculator-ro.html" class="lang-link">🇷🇴 RO</a>
+            <a href="calculator-tr.html" class="lang-link">🇹🇷 TR</a>
+        </div>
+    </div>
+
+    <!-- Calculator Section -->
+    <section class="section">
+        <div class="section-header">
+            <h1 class="section-title">Калкулатор на цени</h1>
+            <p>Изчислете моментно цената на услугата без скрити такси</p>
+        </div>
+
+        <div class="calculator">
+            <h3>🧮 Изчислете вашата цена</h3>
+
+            <form id="priceCalculator">
+                <div class="form-group">
+                    <label for="vehicleWeight">Тегло на МПС</label>
+                    <select id="vehicleWeight" required>
+                        <option value="">Изберете тегло...</option>
+                        <option value="1.20">До 2000 кг - €1.20/км</option>
+                        <option value="1.50">До 2500 кг - €1.50/км</option>
+                        <option value="1.70">До 3000 кг - €1.70/км</option>
+                        <option value="2.50">Над 3000 кг - €2.50/км</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="distance">Километри (еднопосочно)</label>
+                    <input type="number" id="distance" placeholder="Въведете км..." min="1" required>
+                    <small style="opacity: 0.8; display: block; margin-top: 0.5rem;">
+                        * Таксуват се км от точка на тръгване до точка на разтоварване и обратно
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label>Допълнителни услуги</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="ditch" value="80">
+                            <span>Вадене от канавка/дере - €80.00</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="flipped" value="130">
+                            <span>Обърнато МПС (канавка/дере) - €130.00</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="flippedRoad" value="70">
+                            <span>Обърнато МПС (асфалт) - €70.00</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="loading" value="70">
+                            <span>Товаро/разтоварни дейности след ПТП - €70.00</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="noHook" value="20">
+                            <span>Липсваща кука - €20.00</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="cart" value="30">
+                            <span>Помощни колички (на брой) - €30.00</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="night">
+                            <span>Нощна тарифа (22:00 - 07:00) +50%</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="calculatePrice()" style="width: 100%; margin-top: 1rem; padding: 1.5rem 3rem; font-size: 1.2rem; font-weight: 800;">
+                    Изчисли цената
+                </button>
+            </form>
+
+            <div id="priceResult" class="price-result" style="display: none;">
+                <h4>Обща цена:</h4>
+                <div class="total-price" id="totalPrice">€0.00</div>
+                <div class="price-breakdown" id="breakdown"></div>
+                <p style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.9;">
+                    ✅ Всички цени включват ДДС<br>
+                    💳 Плащане: Брой / Карта / Revolut<br>
+                    🧾 Фактура на момента
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Table -->
+    <section class="section section-alt">
+        <div class="section-header">
+            <h2 class="section-title">Ценоразпис</h2>
+            <p>Прозрачни и фиксирани цени - без скрити такси</p>
+        </div>
+
+        <div class="pricing-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Услуга</th>
+                        <th>Цена</th>
+                        <th>Забележки</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Репатриране МПС до 2000 кг</td>
+                        <td class="price-cell">€1.20/км</td>
+                        <td>Двупосочно таксуване</td>
+                    </tr>
+                    <tr>
+                        <td>Репатриране МПС до 2500 кг</td>
+                        <td class="price-cell">€1.50/км</td>
+                        <td>Двупосочно таксуване</td>
+                    </tr>
+                    <tr>
+                        <td>Репатриране МПС до 3000 кг</td>
+                        <td class="price-cell">€1.70/км</td>
+                        <td>Двупосочно таксуване</td>
+                    </tr>
+                    <tr>
+                        <td>Репатриране МПС над 3000 кг</td>
+                        <td class="price-cell">€2.50/км</td>
+                        <td>Двупосочно таксуване</td>
+                    </tr>
+                    <tr>
+                        <td>Вадене от канавка/дере</td>
+                        <td class="price-cell">€80.00</td>
+                        <td>Еднократно</td>
+                    </tr>
+                    <tr>
+                        <td>Вадене обърнато МПС (канавка/дере)</td>
+                        <td class="price-cell">€130.00</td>
+                        <td>Еднократно</td>
+                    </tr>
+                    <tr>
+                        <td>Обърнато МПС от асфалт</td>
+                        <td class="price-cell">€70.00</td>
+                        <td>Еднократно</td>
+                    </tr>
+                    <tr>
+                        <td>Товаро/разтоварни дейности</td>
+                        <td class="price-cell">€70.00</td>
+                        <td>Еднократно</td>
+                    </tr>
+                    <tr>
+                        <td>Липсваща кука</td>
+                        <td class="price-cell">€20.00</td>
+                        <td>Еднократно</td>
+                    </tr>
+                    <tr>
+                        <td>Помощни колички</td>
+                        <td class="price-cell">€30.00/бр</td>
+                        <td>Еднократно</td>
+                    </tr>
+                    <tr>
+                        <td>Подаване на ток</td>
+                        <td class="price-cell">€25.00 + €1.20/км</td>
+                        <td>Еднократно + км</td>
+                    </tr>
+                    <tr>
+                        <td>Доставка на гориво</td>
+                        <td class="price-cell">Цена гориво + €1.20/км</td>
+                        <td>Гориво + км</td>
+                    </tr>
+                    <tr>
+                        <td>Смяна на гума</td>
+                        <td class="price-cell">€25.00 + €1.20/км</td>
+                        <td>Еднократно + км</td>
+                    </tr>
+                    <tr>
+                        <td>Нощна тарифа (22:00 - 07:00)</td>
+                        <td class="price-cell">+50%</td>
+                        <td>Надценка над крайната сума</td>
+                    </tr>
+                    <tr>
+                        <td>Забавяне (не по наша вина)</td>
+                        <td class="price-cell">€30.00/час</td>
+                        <td>За всеки започнал час</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="important-notes">
+            <h3>⚠️ Важна информация</h3>
+            <ul>
+                <li>Всички цени включват ДДС и са финализирани за крайния потребител</li>
+                <li>Таксуват се километри от точка на тръгване до точка на разтоварване и обратно</li>
+                <li>Плащането се извършва В БРОЙ, с КАРТА или REVOLUT ПРЕДИ разтоварване</li>
+                <li>Издаваме фактура на място веднага при плащане и разтоварване</li>
+                <li>Преди да бъде заплатена цялата сума автомобилът НЕ СЕ РАЗТОВАРВА при никакви условия</li>
+                <li>При отказ от заплащане се вика полиция и се начислява допълнително цена на час</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt">
+        <div class="section-header">
+            <h2 class="section-title">Свържете се с нас</h2>
+            <p>Когато имате нужда от помощ - ние сме на разположение 24/7</p>
+        </div>
+
+        <div class="contact-info">
+            <div class="contact-card">
+                <div class="icon">📞</div>
+                <h3>Телефон</h3>
+                <a href="tel:+359888314855">+359 888 314 855</a>
+                <p style="margin-top: 0.5rem; color: var(--text-light);">Денонощно 24/7</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="icon">📍</div>
+                <h3>Локация</h3>
+                <p>ул. Република 23, Годеч, България</p>
+                <a href="https://maps.app.goo.gl/ScpBJ4qf2u2QGk3C7" target="_blank" style="font-size: 0.95rem;">
+                    Виж в Google Maps
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <div class="icon">💼</div>
+                <h3>Фирма</h3>
+                <p><strong>Пътна Помощ - Матю ЕООД</strong></p>
+                <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">
+                    Лицензирана пътна помощ
+                </p>
+            </div>
+
+            <div class="contact-card">
+                <div class="icon">📱</div>
+                <h3>Сподели локация</h3>
+                <button onclick="sendGPSCoordinates()" class="btn btn-primary" style="margin-top: 1rem; padding: 0.75rem 1.5rem; font-size: 0.9rem;">
+                    📍 <span class="btn-text-bg">Изпрати локация</span>
+                    <span class="btn-text-en" style="display:none;">Send Location</span>
+                    <span class="btn-text-ro" style="display:none;">Trimite Locația</span>
+                    <span class="btn-text-tr" style="display:none;">Konum Gönder</span>
+                </button>
+                <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.5rem;">
+                    За по-бърза помощ
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Пътна Помощ - Матю</h3>
+                <p>Надежден партньор при всяка ситуация на пътя. Професионална пътна помощ 24/7.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/matiputnapomosht/" target="_blank" class="social-link">📘</a>
+                    <a href="https://www.instagram.com/matiyhelp91/" target="_blank" class="social-link">📷</a>
+                    <a href="https://www.tiktok.com/@matiyhelp" target="_blank" class="social-link">🎵</a>
+                    <a href="https://www.youtube.com/channel/UCyV97q8gX0EIPvT_IlmMnSg" target="_blank" class="social-link">▶️</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Услуги</h3>
+                <ul>
+                    <li><a href="index.html#services">Репатриране след ПТП</a></li>
+                    <li><a href="index.html#services">Вадене от канавка</a></li>
+                    <li><a href="index.html#services">Репатриране на бусове</a></li>
+                    <li><a href="index.html#services">Подаване на ток</a></li>
+                    <li><a href="index.html#services">Доставка на гориво</a></li>
+                    <li><a href="index.html#services">Смяна на гума</a></li>
+                    <li><a href="index.html#services">Вадене обърнато МПС</a></li>
+                    <li><a href="index.html#services">Помощни колички</a></li>
+                    <li><a href="index.html#services">Липсваща кука</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Бързи връзки</h3>
+                <ul>
+                    <li><a href="calculator.html">Калкулатор на цени</a></li>
+                    <li><a href="about.html">За нас</a></li>
+                    <li><a href="privacy-policy.html">Политика за поверителност</a></li>
+                    <li><a href="faq.html">Често задавани въпроси</a></li>
+                    <li><a href="https://sites.google.com/view/matiuhelp/" target="_blank">Нашият сайт</a></li>
+                    <li><a href="https://luxury77.com/firm/avtomorga_mitaka/" target="_blank">Luxury77</a></li>
+                    <li><a href="https://myve.bg/patna-pomosht-matyu-eood-obekt14342.html" target="_blank">MyVe</a></li>
+                    <li><a href="https://www.primewheels.bg/top-avto-uslugi/services-other/services-other-assistance/ptna-pomoshch-matiu-godiech-pietrokhan-kalotina-582.html" target="_blank">PrimeWheels</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <ul>
+                    <li>📞 <a href="tel:+359888314855">+359 888 314 855</a></li>
+                    <li>📍 ул. Република 23, Годеч</li>
+                    <li>🕐 24/7 Денонощно</li>
+                    <li>💳 Брой / Карта / Revolut</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p style="text-align:center;color:#ffffff;margin-top:.5rem"><a href="https://moverstudio.online" target="_blank" rel="noopener" style="text-decoration: none; color: inherit; font-weight: normal;">© 2026 MOVER Studio — уеб дизайн и разработка. Всички права запазени.</a></p>
+            <p>Лицензирана пътна помощ | ДДС | Фактури на момента</p>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+        <a href="tel:+359888314855">
+            📞
+        </a>
+    </div>
+
+    <!-- Floating Location Button -->
+    <div class="floating-location">
+        <button onclick="sendGPSCoordinates()">
+            📍
+        </button>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function calculatePrice() {
+            const weightRate = parseFloat(document.getElementById('vehicleWeight').value);
+            const distance = parseFloat(document.getElementById('distance').value);
+
+            if (!weightRate || !distance) {
+                alert('Моля попълнете тегло на МПС и километри!');
+                return;
+            }
+
+            // Calculate base price (round trip) with minimums per weight category
+            const distanceCost = weightRate * distance * 2; // round trip
+            let minKmPrice = 0;
+            if (Math.abs(weightRate - 1.2) < 0.001) minKmPrice = 60; // до 2000 кг
+            else if (Math.abs(weightRate - 1.5) < 0.001) minKmPrice = 80; // 2000-2500 кг
+            else if (Math.abs(weightRate - 1.7) < 0.001) minKmPrice = 110; // 2500-3000 кг
+            else if (Math.abs(weightRate - 2.5) < 0.001) minKmPrice = 250; // над 3000 кг
+
+            let basePrice = distanceCost;
+            let minNote = '';
+            if (minKmPrice > 0 && distanceCost < minKmPrice) {
+                basePrice = minKmPrice;
+                minNote = ' (минимална цена приложена)';
+            }
+
+            let extras = 0;
+            let breakdown = [];
+
+            breakdown.push(`Базова цена: €${basePrice.toFixed(2)} (${distance} км x 2 x €${weightRate.toFixed(2)}/км${minNote})`);
+
+            // Add extras
+            if (document.getElementById('ditch').checked) {
+                extras += 80;
+                breakdown.push('Вадене от канавка: €80.00');
+            }
+            if (document.getElementById('flipped').checked) {
+                extras += 130;
+                breakdown.push('Обърнато МПС (канавка): €130.00');
+            }
+            if (document.getElementById('flippedRoad').checked) {
+                extras += 70;
+                breakdown.push('Обърнато МПС (асфалт): €70.00');
+            }
+            if (document.getElementById('loading').checked) {
+                extras += 70;
+                breakdown.push('Товаро/разтоварни дейности: €70.00');
+            }
+            if (document.getElementById('noHook').checked) {
+                extras += 20;
+                breakdown.push('Липсваща кука: €20.00');
+            }
+            if (document.getElementById('cart').checked) {
+                extras += 30;
+                breakdown.push('Помощни колички: €30.00');
+            }
+
+            let subtotal = basePrice + extras;
+            let total = subtotal;
+
+            // Night surcharge
+            if (document.getElementById('night').checked) {
+                const nightSurcharge = subtotal * 0.5;
+                total = subtotal + nightSurcharge;
+                breakdown.push(`Нощна тарифа (+50%): €${nightSurcharge.toFixed(2)}`);
+            }
+
+            // Display result
+            document.getElementById('totalPrice').textContent = `€${total.toFixed(2)}`;
+            document.getElementById('breakdown').innerHTML = breakdown.map(item =>
+                `<div class="breakdown-item"><span>${item.split(':')[0]}:</span><span>${item.split(':')[1]}</span></div>`
+            ).join('');
+            document.getElementById('priceResult').style.display = 'block';
+
+            // Scroll to result
+            document.getElementById('priceResult').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // Prevent multiple selection of flipped options
+        document.getElementById('flipped').addEventListener('change', function() {
+            if (this.checked) {
+                document.getElementById('flippedRoad').checked = false;
+            }
+        });
+
+        document.getElementById('flippedRoad').addEventListener('change', function() {
+            if (this.checked) {
+                document.getElementById('flipped').checked = false;
+            }
+        });
+
+        // Location sharing functionality
+        function sendGPSCoordinates() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    function(position) {
+                        const latitude = position.coords.latitude;
+                        const longitude = position.coords.longitude;
+                        const accuracy = position.coords.accuracy;
+
+                        // Create SMS message with coordinates
+                        const message = `Пътна помощ - нуждая се от помощ! Моите координати: ${latitude.toFixed(6)}, ${longitude.toFixed(6)}. Точност: ${Math.round(accuracy)}м.`;
+                        const phoneNumber = '0888314855';
+
+                        // Create SMS link
+                        const smsLink = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`;
+
+                        // Open SMS app
+                        window.location.href = smsLink;
+
+                        // Show success message
+                        alert('Локацията е изпратена! SMS приложението ще се отвори.');
+                    },
+                    function(error) {
+                        let errorMessage = 'Не можахме да получим вашата локация.';
+                        switch(error.code) {
+                            case error.PERMISSION_DENIED:
+                                errorMessage = 'Достъпът до локация е отказан. Моля, разрешете достъпа в браузъра.';
+                                break;
+                            case error.POSITION_UNAVAILABLE:
+                                errorMessage = 'Локацията не е достъпна.';
+                                break;
+                            case error.TIMEOUT:
+                                errorMessage = 'Времето за получаване на локация изтече.';
+                                break;
+                        }
+                        alert(errorMessage);
+                    },
+                    {
+                        enableHighAccuracy: true,
+                        timeout: 10000,
+                        maximumAge: 300000
+                    }
+                );
+            } else {
+                alert('Вашият браузър не поддържа геолокация.');
+            }
+        }
+
+        // Language switching functionality
+        function switchLanguage(lang) {
+            // Hide all language-specific elements
+            document.querySelectorAll('[class*="btn-text-"]').forEach(el => el.style.display = 'none');
+            // Show selected language elements
+            document.querySelectorAll(`.btn-text-${lang}`).forEach(el => el.style.display = 'inline');
+        }
+
+        // Initialize with Bulgarian
+        document.addEventListener('DOMContentLoaded', function() {
+            switchLanguage('bg');
+        });
+    </script>
+</body>
+</html>
